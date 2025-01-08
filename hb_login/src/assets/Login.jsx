@@ -21,7 +21,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/login', { email, password });
+      const response = await axios.post('http://localhost:5002/login', { email, password });
       console.log('Response from server:', response.data);
 
       if (response.data.success) {

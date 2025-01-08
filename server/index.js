@@ -43,8 +43,6 @@ app.post('/login', (req, res) => {
         res.status(500).json({ success: false, message: "Error logging in", error: err });
     });
 });
+app.listen(5002, () => console.log(`Server is running on port 5002`));
 
-
-app.listen(5001, () => {
-    console.log("Server is running on port 5001");
 });
