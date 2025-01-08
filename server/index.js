@@ -9,7 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(mongo_url, {
-    
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
 
@@ -45,4 +46,4 @@ app.post('/login', (req, res) => {
 });
 app.listen(5002, () => console.log(`Server is running on port 5002`));
 
-});
+
