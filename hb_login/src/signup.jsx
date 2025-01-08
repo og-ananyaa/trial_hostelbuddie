@@ -19,7 +19,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/register', { name, email, password });
+      const response = await axios.post('http://localhost:5002/register', { name, email, password });
       console.log(response.data);
       navigate('/login');
     } catch (err) {
