@@ -1,15 +1,15 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require("cors");
-const StudentModel = require('./models/Student');
+const StudentModel = require('./models/Student.js');
 const app = express();
+const mongo_url="";
 
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/student", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+mongoose.connect(mongo_url, {
+    
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
 
