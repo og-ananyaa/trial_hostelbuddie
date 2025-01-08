@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.home {
+  text-align: center;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+.home-header {
+  background: linear-gradient(135deg, #72b8f5, #00f2fe,#f4f4f9);
+  color: white;
+  padding: 60px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home-header p {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cta-button, .header-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .header-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Main Section */
+.home-main {
+  padding: 40px 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: #4facfe;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Section */
+.home-footer {
+  background: #333;
+  color: white;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 30px;
+  box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+CSS FOR THE BUTTONS UNDER 2 FEATURES */
+.feature-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.feature-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS FOR THE FOOTER */
+/* Footer Styling */
+.home-footer {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 10px; /* Reduced padding */
+  border-top: 3px solid #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px; /* Reduced font size */
+}
+
+.home-footer h2 {
+  margin: 10px 0;
+  font-size: 18px; /* Reduced heading font size */
+}
+
+.footer-buttons {
+  margin-top: 10px; /* Reduced margin */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduced gap between buttons */
+}
+
+.footer-button {
+  background-color: #fff;
+  color: #2575fc;
+  padding: 8px 16px; /* Reduced button padding */
+  text-decoration: none;
+  border-radius: 20px; /* Slightly smaller buttons */
+  font-size: 14px; /* Reduced button font size */
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.footer-button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+.footer-button:active {
+  transform: scale(0.95);
+}
+/* CSS FOR ABOUT CARDS */
+/* Home.css */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+.about-section, .testimonials-section {
+  margin-bottom: 4rem;
+}
+
+.about-box, .testimonials-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-card, .testimonial-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover, .testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h3, .testimonial-card span {
+  font-size: 1.2rem;
+  color: #4a00e0;
+  margin-bottom: 1rem;
+}
+
+.about-card p, .testimonial-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.testimonial-card {
+  background: #f0f9ff;
+  border: 1px solid #b2d8ff;
+  color: #333;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a00e0;
+}
+
+@media (max-width: 768px) {
+  .about-box, .testimonials-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card, .testimonial-card {
+    width: 90%;
+  }
+}
